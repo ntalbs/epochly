@@ -37,7 +37,7 @@ fn epoch_millis(dt: OffsetDateTime) -> i128 {
     dt.unix_timestamp_nanos() / 1_000_000
 }
 
-const HISTORY_FILE: &str = ".dately_history";
+const HISTORY_FILE: &str = ".epochly_history";
 
 fn history_path() -> PathBuf {
     let home_dir = env::var("HOME").map(PathBuf::from).ok().unwrap();
